@@ -56,8 +56,6 @@ public class RecursiveGenericSelectionSortTest {
         JScrollPane jsp = new JScrollPane(txaOutput);
         JOptionPane.showMessageDialog(null, jsp);
 
-        // Task02 - being printed on the netbeans console 
-        //after we close the JOptionPane window :)
         Box[] boxes = new Box[15];
         
         for (int i = 0; i < boxes.length; i++) {
@@ -85,7 +83,7 @@ public class RecursiveGenericSelectionSortTest {
                 builder.append("\n");
             }
         } catch (FileNotFoundException ex) {
-            System.err.printf("File %s was not found!\n", fileName);
+            System.err.printf("File %s was not found!\nFile should be in the project folder(out of the package)", fileName);
         }
         return builder.toString();
     }
